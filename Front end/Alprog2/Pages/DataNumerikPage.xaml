@@ -1,0 +1,83 @@
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Alprog2.Pages.DataNumerikPage"
+             Title="Data Numerik">
+
+    <Grid>
+        <!-- Background Image -->
+        <Image Source="numeri.jpg"
+               Aspect="AspectFill"
+               IsVisible="True" />
+
+        <!-- Konten -->
+        <Grid RowDefinitions="Auto,*" ColumnDefinitions="*,*,*"
+              Padding="20" ColumnSpacing="20" VerticalOptions="CenterAndExpand">
+
+            <!-- Temperatur -->
+            <StackLayout Grid.Column="0">
+                <Label Text="Temperatur"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="Black"/>
+                <Frame BackgroundColor="White"
+                       CornerRadius="25"
+                       Padding="20"
+                       HeightRequest="150"
+                       HasShadow="True">
+                    <Label x:Name="LabelTemperature"
+                           Text="-- °C"
+                           FontSize="36"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="#2C3E50" />
+                </Frame>
+            </StackLayout>
+
+            <!-- Resistansi -->
+            <StackLayout Grid.Column="1">
+                <Label Text="Resistansi"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="Black"/>
+                <Frame BackgroundColor="White"
+                       CornerRadius="25"
+                       Padding="20"
+                       HeightRequest="150"
+                       HasShadow="True">
+                    <Label x:Name="LabelResistance"
+                           Text="-- Ω"
+                           FontSize="36"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="Purple" />
+                </Frame>
+            </StackLayout>
+
+            <!-- Numerik -->
+            <StackLayout Grid.Column="2">
+                <Label Text="Suhu Numerik"
+                       FontSize="18"
+                       FontAttributes="Bold"
+                       HorizontalOptions="Center"
+                       TextColor="Black"/>
+                <Frame BackgroundColor="White"
+                       CornerRadius="25"
+                       Padding="20"
+                       HeightRequest="150"
+                       HasShadow="True">
+                    <Label x:Name="LabelNumerik"
+                           Text="-- °C"
+                           FontSize="36"
+                           FontAttributes="Bold"
+                           HorizontalTextAlignment="Center"
+                           VerticalTextAlignment="Center"
+                           TextColor="Teal" />
+                </Frame>
+            </StackLayout>
+        </Grid>
+    </Grid>
+</ContentPage>

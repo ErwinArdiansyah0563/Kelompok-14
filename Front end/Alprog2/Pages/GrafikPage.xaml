@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:chart="clr-namespace:Microcharts.Maui;assembly=Microcharts.Maui"
+             x:Class="Alprog2.Pages.GrafikPage"
+             Title="Grafik"
+             BackgroundColor="#F4F1FF">
+
+    <VerticalStackLayout Padding="20" Spacing="20">
+        <Label Text="📈 Grafik Suhu Sensor"
+           FontSize="24"
+           FontAttributes="Bold"
+           TextColor="#3498db"
+           HorizontalOptions="Center"/>
+
+        <chart:ChartView x:Name="ChartViewSensor"
+                     HeightRequest="250"
+                     BackgroundColor="White"/>
+
+        <Label Text="📈 Grafik Suhu Numerik"
+           FontSize="24"
+           FontAttributes="Bold"
+           TextColor="#e67e22"
+           HorizontalOptions="Center"/>
+
+        <chart:ChartView x:Name="ChartViewNumerik"
+                     HeightRequest="250"
+                     BackgroundColor="White"/>
+    </VerticalStackLayout>
+
+</ContentPage>
