@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Shell
+    x:Class="Alprog2.AppShell"
+    xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+    xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+    xmlns:pages="clr-namespace:Alprog2.Pages"
+    Shell.FlyoutBehavior="Flyout">
+
+    <FlyoutItem Title="Pilih Port">
+        <ShellContent
+     Title="Pilih Port"
+     ContentTemplate="{DataTemplate pages:ComPortPage}"
+     Route="ComPortPage" />
+    </FlyoutItem>
+    
+    <FlyoutItem Title="Data Numerik">
+        <ShellContent
+            Title="Data Numerik"
+            ContentTemplate="{DataTemplate pages:DataNumerikPage}"
+            Route="DataNumerikPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Grafik">
+        <ShellContent
+            Title="Grafik"
+            ContentTemplate="{DataTemplate pages:GrafikPage}"
+            Route="GrafikPage" />
+    </FlyoutItem>
+
+    <FlyoutItem Title="Database">
+        <ShellContent
+            Title="Database"
+            ContentTemplate="{DataTemplate pages:DatabasePage}"
+            Route="DatabasePage" />
+    </FlyoutItem>
+    
+</Shell>

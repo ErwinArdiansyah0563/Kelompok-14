@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="Alprog2.Pages.ComPortPage"
+             Title="Pilih COM Port">
+    <ScrollView>
+        <VerticalStackLayout Padding="24" Spacing="24">
+
+            <!-- Header -->
+            <Label Text="Selamat Datang 👋"
+               FontSize="32"
+               FontAttributes="Bold"
+               HorizontalOptions="Center" />
+
+            <Label Text="Silakan pilih COM port untuk melanjutkan:"
+               FontSize="18"
+               TextColor="Gray"
+               HorizontalOptions="Center" />
+
+            <!-- COM Port Picker -->
+            <Label Text="Pilih COM Port:"
+               FontSize="16"
+               FontAttributes="Bold" />
+
+            <Picker x:Name="ComPortPicker"
+                Title="Pilih Port"
+                TitleColor="Gray"
+                SelectedIndexChanged="ComPortPicker_SelectedIndexChanged"
+                BackgroundColor="White"
+                TextColor="Black"
+                FontSize="16" />
+
+            <!-- Start Button -->
+            <Button x:Name="StartButton"
+                Text="Mulai"
+                Clicked="StartButton_Clicked"
+                IsVisible="False"
+                BackgroundColor="#28A745"
+                TextColor="White"
+                CornerRadius="12"
+                FontSize="16"
+                HeightRequest="50" />
+
+            <!-- Refresh Button -->
+            <Button Text="Refresh Port"
+                Clicked="OnRefreshPortsClicked"
+                BackgroundColor="#5D3FD3"
+                TextColor="White"
+                CornerRadius="12"
+                FontSize="16"
+                HeightRequest="50" />
+
+        </VerticalStackLayout>
+    </ScrollView>
+
+</ContentPage>
